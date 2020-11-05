@@ -1,0 +1,5 @@
+O Git implementa várias estratégias de merge (mescla de arquivos); uma não padrão pode ser selecionada durante um merge:[36]
+
+resolve (resolver): o tradicional algoritmo de merge em três vias.
+recursive (recursivo): Este é o padrão quando baixando ou mesclando um branch, uma variante do algoritmo de mescla em três vias. Quando há mais de um ancestral comum que pode ser usado em um merge de três vias, cria-se uma árvore de merge dos ancestrais comuns e usa-se isso como a árvore de referência para o merge em três vias. Isto têm resultado em menor número de conflitos em merges sem causar merges errados por testes realizados em merges tirados do histórico de desenvolvimento do kernel do Linux 2.6. Adicionalmente pode detectar e lidar com merges envolvendo renomeações."[37]
+octopus (polvo): Este é o padrão quando efetuado merge em mais de duas heads.

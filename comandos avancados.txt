@@ -1,0 +1,6 @@
+O banco de dados de objetos contém quatro tipos de objetos:
+
+Um objeto blob é o conteúdo de um arquivo. Estes objetos não possuem nomes, datações ou outros metadados.
+Um objeto tree (árvore) é o equivalente a um diretório. Ele contém um lista de nomes de arquivos, cada um com bits que informam o tipo e o nome do blob, da árvore, ligação simbólica ou conteúdo de diretório que pertence a este nome. Este objeto descreve o estado da árvore de diretório.
+Um objeto commit (entrega) liga árvores de objetos junto com um histórico. Ele contém o nome de uma árvore de objetos (da raiz de diretórios), datação, uma mensagem de log, e os nomes de zero ou mais objetos-pai de commit.
+Um objeto tag (rótulo) é um invólucro que referencia outros objetos e pode conter metadados adicionais relacionados a outro objeto. Em geral, é usado para armazenar uma assinatura digital de um objeto commit correspondente àquela release de dados que estão sendo rastreados pelo Git.
